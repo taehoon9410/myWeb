@@ -117,9 +117,9 @@
 						box-shadow: 1px 1px 2px #777777;opacity: 0.8; transition: 500ms ease;}
 		.banner_img01{background-image:url(../../../img/html_icon.png);background-repeat:no-repeat;background-position: 50% 60%;
 						background-size: 60%; }
-		.banner_img02{background-image:url(../../../../img/css_icon.png);background-repeat:no-repeat;background-position: 50% 60%;
+		.banner_img02{background-image:url(../../../img/css_icon.png);background-repeat:no-repeat;background-position: 50% 60%;
 						background-size: 60%; margin: 0 20px;}
-		.banner_img03{background-image:url(../../../../img/javascript_icon.png);background-repeat:no-repeat;background-position: 50% 60%;
+		.banner_img03{background-image:url(../../../img/javascript_icon.png);background-repeat:no-repeat;background-position: 50% 60%;
 						background-size: 60%; }
 
 		.banner>p{color: #ffffff;text-align: center;margin-top: 100px;}
