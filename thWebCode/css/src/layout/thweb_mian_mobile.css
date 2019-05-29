@@ -2,7 +2,7 @@
 
 /*mobile 480px==========================*/
 @media screen and (max-width:480px) { 
-
+ 
 /*=================================mob common*/
 #wrap{background-color: #aaa;}
 .con_06{display: none;}
@@ -30,7 +30,12 @@
 	.welcome_text{width: 100%;height: 150px;}
 	.hello_text{display: none;text-align: center;margin-top: 150px;font-family: 'roboto','sans-serif';
 				margin-bottom: 50px;transition: 700ms ease;}
-    .info{padding-top: 200px;box-sizing: border-box;width: 100%; height: 400px;opacity: 0;transition: all 800ms ease;}
+    .scroll_portfolio{position: relative;margin: auto;width: 150px; height: 80px;box-sizing: border-box;border: solid 1px #000000;
+    				  margin-bottom: 150px;}
+		.port_btn{width: 100%; height: 50px; font-size: 20px;font-family: 'roboto',sans-serif;text-transform: capitalize;}
+			.line01{position: absolute;left: 50%;display: inline-block;width: 50px;height: 10px;border-bottom: solid 1px #000000;}
+            .line02{position: absolute;left: 77%;top:58.333%;display: inline-block;height: 20px;border-left: solid 1px #000000; transform: rotateZ(120deg);}
+    .info{padding-top: 100px;box-sizing: border-box;width: 100%; height: 200px;opacity: 0;transition: all 800ms ease;overflow: hidden;}
  	.info_wrap{width: 220px;margin:auto;}
     .info_icon{float: left;width: 20px;height:20px;background-color: #ccc;margin-right:0px; }
  	
@@ -140,8 +145,8 @@
  			font-family: 'roboto';text-align: center;line-height: 40px;text-transform: capitalize;}
 	
 
-   .more_btn a{display: block;width: 100%;height: 100%;color: #000000;}
-   .more_btn a:hover{background-color: #000000;color: #fff;transition: all 500ms linear;}
+   .more_btn button{display: block;width: 100%;height: 100%;color: #000000;text-transform: capitalize;font-family: 'roboto',sans-serif;}
+   .more_btn button:hover{background-color: #000000;color: #fff;transition: all 500ms linear;}
    .more_arow{padding: 10px;box-sizing: border-box; width: 100%;text-align: center;font-size: 20px;}
 
 #footBox{padding-top: 200px ;box-sizing: border-box;width: 100%;height: 500px;background-color: #ffffff;
@@ -154,6 +159,11 @@
   				background-repeat: no-repeat;background-size: 90% 90%; background-position: 50% 50%;}
    .footer_logo>a{display: block;width: 100%;height: 100%;}
    #footBox p{text-align: center;margin-bottom:20px;font-family: '나눔고딕','arial';font-size: 8px;color: #000;margin-top: 8px; }
+
+
+
+
+
 
 
 }/*mobile end==========================*/

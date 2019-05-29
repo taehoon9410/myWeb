@@ -84,7 +84,7 @@ var infoAc = function(){
           var st = win.scrollTop();
           if(st <= 200){info.stop().css({
           						 opacity:'1',
-                                 paddingTop: '50px'
+                       paddingTop: '50px'
           							});
                       }
                        };
@@ -103,7 +103,7 @@ var infoCon = $('.info_icon');
 
 var infoR = function(){
           var str = win.scrollTop();
-          if(str <= 400){infoCon.stop().css({
+          if(str <= 600){infoCon.stop().css({
           						 marginRight: '5px',
                        height: '50px',
                        width: '50px'
@@ -118,13 +118,32 @@ win.on('scroll' ,function(){
        });     
 
 
+//============================mob WOW animate
+new WOW().init();
+$('.profile_img').addClass('wow flipInY');
+$('.banner_wrap').addClass('wow fadeInUp').attr('wow-data-offset','1000');
+$('.scroll_portfolio').addClass('wow fadeInLeft').attr('wow-data-offset','2000');
 
 
+$('.p_move01').addClass('wow fadeInUp').attr('wow-data-offset','1100');
 
+$('.p_move02').addClass('wow fadeInUp').attr('wow-data-offset','1300');
 
+$('.p_move03').addClass('wow fadeInUp').attr('wow-data-offset','1400');
+
+$('.port_main_text').addClass('wow fadeInUp').attr('wow-data-offset','2300');
+$('.port_main_text').attr('data-wow-delay','0.3s');
+
+$('.con_01').addClass('wow fadeInUp').attr('wow-data-offset','2400');
+$('.con_02').addClass('wow fadeInUp').attr('wow-data-offset','2600');
+$('.con_03').addClass('wow fadeInUp').attr('wow-data-offset','2700');
+$('.con_04').addClass('wow fadeInUp').attr('wow-data-offset','2800');
+$('.con_05').addClass('wow fadeInUp').attr('wow-data-offset','2900');
+$('.con_06').addClass('wow fadeInUp').attr('wow-data-offset','3000');
+$('.footer_wrap').addClass('wow fadeInUp').attr('wow-data-offset','5000');
 };
 //==================mob.js end
-
-
+var NowScroll = $(document).scrollTop(); 
+console.log(NowScroll);
 
 })(jQuery);

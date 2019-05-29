@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- thweb.html-->
-<html lang="ko-KR">
+<html lang="ko-KR"> 
 <head>
 <meta charset="UTF-8">	
 <meta http-equiv="X-UA-compatible" content="IE=edge" />
@@ -9,6 +9,7 @@
 <!-- normal -->
 <link rel="stylesheet" href="../css/base/reset.css" />
 <link rel="stylesheet" href="../css/base/common.css" />
+<link rel="stylesheet" href="../css/base/animate.css">
 <link rel="stylesheet" href="../css/src/thweb_main.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
@@ -52,6 +53,7 @@
 		<div class="welcome_text">
 			<p class="hello_text">HELLO!</p>
 		</div>
+	
 		<div class="info">
 			<h3 class="hidden">contact info icon area</h3>
 			<ul class="info_wrap">
@@ -67,7 +69,14 @@
 			<h3 class="hidden">just doodle image</h3>
 			<span class="doodle_img"></span>
 		</div>
-       
+
+		
+       	<div class="scroll_portfolio">
+			<h3 class="hidden">포트폴리오로 이동</h3>
+			<button class="port_btn" type="button">go to portfolio</button>
+			<span class="line01 arow_line"></span>
+			<span class="line02 arow_line"></span>
+		</div>
 
 		<div class="button_wrap">
 		
@@ -126,9 +135,9 @@
 			<li class="banner_img banner_img02"></li>
 			<li class="banner_img banner_img03"></li>
 		 </ul>
-		 <p>HTML + CSS + JavaScript</p>
-		 <p>=</p>
-		 <p>AWESOME</p>
+		 <p class="p_move01">HTML + CSS + JavaScript</p>
+		 <p class="p_move02">=</p>
+		 <p class="p_move03">AWESOME</p>
 		</div>
 
 	<div id="portBox">
@@ -202,7 +211,7 @@
 	<!-- more_btn =============================================-->
 		<div class="more_wrap">
 		 <div class="more_btn">
-			<a href="#">load more</a>
+			<button type="button" id="more" onclick="alert('준비 중입니다 @/~/@')" value="more">load more</button>
 		 </div>
 		 <div class="more_arow">
 			<p><i class="fas fa-angle-double-down"></i></p>
@@ -237,7 +246,7 @@
 <!-- script(jQuery) -->
 <script src="../js/base/jquery-3.3.1.min.js"></script>
 <script src="../js/base/jquery-ui.min.js"></script>
-
+<script src="../js/base/wow.min.js"></script>
 <!-- =================================================================mobile.js -->
 <script src="../js/src/mobile.js"></script>
 
